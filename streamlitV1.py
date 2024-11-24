@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import cv2
 from PIL import Image
-from img_compV1 import *
+import time
 
 def compress_image_color(image, compression_ratio):
     # Convert to RGB if not already
@@ -62,9 +62,13 @@ def main():
         compressed_image_array = np.clip(compressed_image_array, 0, 255).astype(np.uint8)
         compressed_image = Image.fromarray(compressed_image_array)
 
+        # Save compressed image with compression (JPEG format)
+        output_path = "compressed_image.jpg"
+        compressed_image.save(output_path, quality=80)  # Save with 80% quality for JPEG compression
+
         # Display compressed image
         st.image(compressed_image, caption=f"Compressed Image (Ratio: {compression_ratio})", use_column_width=True)
-        
+        st.write(f"Compressed image saved as {output_path}")
 
 if __name__ == "__main__":
     main()
