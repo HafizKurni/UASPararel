@@ -41,7 +41,7 @@ pip install streamlit numpy opencv-python Pillow
     ```
 3. Run the Streamlit app using the following command:
     ```bash
-    streamlit run image_compressor.py
+    streamlit run streamlitV1.py
     ```
 4. Open the provided URL in your browser to start using the app.
 
