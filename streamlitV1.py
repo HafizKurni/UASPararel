@@ -53,7 +53,7 @@ def main():
     if uploaded_file is not None:
         # Display original image
         original_image = Image.open(uploaded_file)
-        st.image(original_image, caption="Original Image", use_column_width=True)
+        st.image(original_image, caption="Original Image", use_container_width=True)
 
         # Compress image
         compressed_image_array = compress_image_color(original_image, compression_ratio)
@@ -67,7 +67,7 @@ def main():
         compressed_image.save(output_path, quality=80)  # Save with 80% quality for JPEG compression
 
         # Display compressed image
-        st.image(compressed_image, caption=f"Compressed Image (Ratio: {compression_ratio})", use_column_width=True)
+        st.image(compressed_image, caption=f"Compressed Image (Ratio: {compression_ratio})", use_container_width=True)
         st.write(f"Compressed image saved as {output_path}")
 
 if __name__ == "__main__":
