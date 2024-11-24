@@ -37,7 +37,7 @@ pip install streamlit numpy opencv-python Pillow
 1. Clone or download this repository to your local machine.
 2. Install the dependencies using the following command:
     ```bash
-    pip install streamlit numpy opencv-python Pillow
+    pip install -r requirements.txt
     ```
 3. Run the Streamlit app using the following command:
     ```bash
@@ -72,4 +72,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Special thanks to the developers of [Streamlit](https://streamlit.io/) for providing a simple interface for building web apps.
 - The image processing is based on the Fast Fourier Transform (FFT) algorithm, a widely used technique for frequency analysis.
-- Also [Github joshuapjacob](https://github.com/joshuapjacob/fast-fourier-transform-image-compression)
+- Also Special Thanks to [Github joshuapjacob](https://github.com/joshuapjacob/fast-fourier-transform-image-compression) for providing the idea and inspiration to implement Fast Fourier Transform (FFT) image compression in Python.
