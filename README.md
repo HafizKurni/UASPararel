@@ -1,4 +1,9 @@
 # Image Compressor with FFT
+This project is part of the **UAS Project for Sistem Pararel dan Terdistribusi**
+
+## Group Members:
+1. **Hafiz Muhammad Kurniawan** - 09021182126003
+2. **Wisnu Wardana** - 09021282126086
 
 ## Overview
 
