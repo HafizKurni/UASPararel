@@ -85,7 +85,7 @@ if __name__ == "__main__":
     
     output_fileSerial = [os.path.join(output_dir, f'compressed_serial{i+1}.jpg')  for i in range(len(image_files))]
     output_filePararell = [os.path.join(output_dir, f'compressed_parallel{i+1}.jpg') for i in range(len(image_files))]
-    compression_ratio = 0.05  # Keep 10% of the frequencies
+    compression_ratio = 0.1  # Keep 10% of the frequencies
 
     # Serial processing
     print("Starting serial processing...")
