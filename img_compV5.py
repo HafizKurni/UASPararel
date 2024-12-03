@@ -15,7 +15,6 @@ def apply_fft(args):
     import os
     print(f"Processing channel in PID: {os.getpid()}")
     channel, compression_ratio = args
-    print(f"Processing channel with compression ratio {compression_ratio}")
     f_transform = np.fft.fft2(channel)
     f_transform_shifted = np.fft.fftshift(f_transform)
 
@@ -70,7 +69,7 @@ if __name__ == "__main__":
     image_files = input("Enter the paths of the images to compress, separated by commas: ").split(',')
     image_files = [file.strip() for file in image_files]
 
-    compression_ratio = 0.3
+    compression_ratio = 0.1
 
     output_dir = "compressed_image"
     os.makedirs(output_dir, exist_ok=True)
