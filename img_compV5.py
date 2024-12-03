@@ -12,6 +12,8 @@ def split_channels(image):
 
 # 2. Function to apply FFT to a color channel
 def apply_fft(args):
+    import os
+    print(f"Processing channel in PID: {os.getpid()}")
     channel, compression_ratio = args
     print(f"Processing channel with compression ratio {compression_ratio}")
     f_transform = np.fft.fft2(channel)
@@ -68,9 +70,9 @@ if __name__ == "__main__":
     image_files = input("Enter the paths of the images to compress, separated by commas: ").split(',')
     image_files = [file.strip() for file in image_files]
 
-    compression_ratio = float(input("Enter the compression ratio (0.0 to 1.0, e.g., 0.5 for 50%): "))
+    compression_ratio = 0.3
 
-    output_dir = "compressed_images"
+    output_dir = "compressed_image"
     os.makedirs(output_dir, exist_ok=True)
 
     # Process each image in serial
