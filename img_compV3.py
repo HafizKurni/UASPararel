@@ -14,6 +14,8 @@ def split_channels(image):
 
 # 2. Function to apply FFT to a color channel
 def apply_fft(channel):
+    import os
+    print(f"Processing channel in PID: {os.getpid()}")
     # Apply 2D FFT
     f_transform = np.fft.fft2(channel)
     f_transform_shifted = np.fft.fftshift(f_transform)
