@@ -59,7 +59,7 @@ pip install streamlit numpy opencv-python Pillow
 ## Example
 
 - Original Image:
-  ![Original Image](img/img-1.jpg)
+  ![Original Image](img/img-1B.jpg)
 
 - Compressed Image (Compression Ratio: 0.1):
   ![Compressed Image](compressed_image/compressed_serial1.jpg)
